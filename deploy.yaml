@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pyflask-deploy
+  namespace: webserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pyflask
+  template:
+    metadata:
+      labels:
+        app: pyflask
+    spec:
+      containers:
+        - name: pyflask
+<<<<<<< HEAD
+          image: labazizlab/image-code:build-11
+=======
+          image: labazizlab/image-code:build-11
+>>>>>>> a91c187 (f)
+          ports:
+            - containerPort: 5000
