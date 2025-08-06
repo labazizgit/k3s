@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: pyflask
-          image: abdulaziz82/app-py:build-107
+          image: abdulaziz82/app-py:build-8
           ports:
             - containerPort: 5000
